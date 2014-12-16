@@ -37,7 +37,7 @@ when String
       path [log_path]
       rotate node['chef_client']['logrotate']['rotate']
       frequency node['chef_client']['logrotate']['frequency']
-      options ['compress']
+      options node['chef_client']['logrotate']['options']
       postrotate '/etc/init.d/chef-client reload >/dev/null || :'
     end
   end

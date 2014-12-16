@@ -130,6 +130,8 @@ The following attributes are set on a per-platform basis, see the `attributes/de
     logs to keep on disk, default 12.
   - `node["chef_client"]["logrotate"]["frequency"]` - How often
     to rotate chef client logs, default weekly.
+  - `node["chef_client"]["logrotate"]["options"]` - Array of options
+    for the logrotate definition, default ['compress']
 
 This cookbook makes use of attribute-driven configuration with this attribute. See __USAGE__ for examples.
 

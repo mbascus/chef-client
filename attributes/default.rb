@@ -83,6 +83,7 @@ default['ohai']['disabled_plugins'] = []
 # Default rotate: 12; frequency: weekly
 default['chef_client']['logrotate']['rotate'] = 12
 default['chef_client']['logrotate']['frequency'] = 'weekly'
+default['chef_client']['logrotate']['options'] = ['compress']
 
 case node['platform_family']
 when 'aix'
